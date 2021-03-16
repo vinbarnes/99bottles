@@ -64,7 +64,6 @@ class BottlesTest < Minitest::Test
   end
 
   def test_a_few_verses
-    skip
     expected =
       "2 bottles of beer on the wall, " +
       "2 bottles of beer.\n" +

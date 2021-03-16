@@ -28,4 +28,10 @@ class Bottles
         "#{number - 1} bottles of beer on the wall.\n"
     end
   end
+
+  def verses(start_at, end_at)
+    start_at.downto(end_at).map { |number|
+      verse(number)
+    }.join("\n")
+  end
 end
