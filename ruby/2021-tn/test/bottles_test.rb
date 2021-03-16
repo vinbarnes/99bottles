@@ -14,7 +14,6 @@ class BottlesTest < Minitest::Test
   end
 
   def test_another_verse
-    skip
     expected =
       "3 bottles of beer on the wall, " +
       "3 bottles of beer.\n" +
@@ -24,7 +23,6 @@ class BottlesTest < Minitest::Test
   end
 
   def test_verse_2
-    skip
     expected =
       "2 bottles of beer on the wall, " +
       "2 bottles of beer.\n" +
@@ -34,7 +32,6 @@ class BottlesTest < Minitest::Test
   end
 
   def test_verse_1
-    skip
     expected =
       "1 bottle of beer on the wall, " +
       "1 bottle of beer.\n" +
@@ -44,7 +41,6 @@ class BottlesTest < Minitest::Test
   end
 
   def test_verse_0
-    skip
     expected =
       "No more bottles of beer on the wall, " +
       "no more bottles of beer.\n" +
@@ -54,7 +50,6 @@ class BottlesTest < Minitest::Test
   end
 
   def test_a_couple_verses
-    skip
     expected =
       "99 bottles of beer on the wall, " +
       "99 bottles of beer.\n" +
