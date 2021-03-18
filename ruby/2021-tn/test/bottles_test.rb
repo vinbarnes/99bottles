@@ -44,4 +44,29 @@ class BottlesTest < Minitest::Test
 
     assert_equal expected, Bottles.new.verse(1)
   end
+
+  def test_verse_0
+    expected =
+      "No bottles of beer on the wall, " +
+      "No bottles of beer.\n" +
+      "Go to the store and buy some more, " +
+      "99 bottles of beer on the wall.\n"
+
+    assert_equal expected, Bottles.new.verse(0)
+  end
+
+  def test_a_couple_verses
+    expected =
+      "99 bottles of beer on the wall, " +
+      "99 bottles of beer.\n" +
+      "Take one down and pass it around, " +
+      "98 bottles of beer on the wall.\n" +
+      "\n" +
+      "98 bottles of beer on the wall, " +
+      "98 bottles of beer.\n" +
+      "Take one down and pass it around, " +
+      "97 bottles of beer on the wall.\n"
+
+    assert_equal expected, Bottles.new.verses(99, 98)
+  end
 end

@@ -2,6 +2,11 @@ class Bottles
 
   def verse(number)
     case number
+    when 0
+      "No bottles of beer on the wall, " +
+      "No bottles of beer.\n" +
+      "Go to the store and buy some more, " +
+      "99 bottles of beer on the wall.\n"
     when 1
       "1 bottle of beer on the wall, " +
       "1 bottle of beer.\n" +
@@ -18,5 +23,9 @@ class Bottles
       "Take one down and pass it around, " +
       "#{number - 1} bottles of beer on the wall.\n"
     end
+  end
+
+  def verses(_, _)
+    verse(99) + "\n" + verse(98)
   end
 end
