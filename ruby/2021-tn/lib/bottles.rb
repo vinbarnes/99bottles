@@ -10,13 +10,21 @@ class Bottles
     when 1
       "#{number} #{container(number)} of beer on the wall, " +
       "#{number} #{container(number)} of beer.\n" +
-      "Take it down and pass it around, " +
+      "Take #{pronoun(number)} down and pass it around, " +
       "no more bottles of beer on the wall.\n"
     else
       "#{number} #{container(number)} of beer on the wall, " +
       "#{number} #{container(number)} of beer.\n" +
-      "Take one down and pass it around, " +
+      "Take #{pronoun(number)} down and pass it around, " +
       "#{number - 1} #{container(number - 1)} of beer on the wall.\n"
+    end
+  end
+
+  def pronoun(number)
+    if number == 1
+      "it"
+    elsif number > 0
+      "one"
     end
   end
 
